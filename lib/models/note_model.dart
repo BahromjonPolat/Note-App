@@ -22,11 +22,11 @@ class Note {
     return map;
   }
 
-  int get userId => _userId;
+  int get userId => _userId!;
 
-  String get body => _body;
+  String get body => _body!;
 
-  String get title => _title;
+  String get title => _title!;
 
-  int get id => _id;
+  int get id => _id!;
 }
