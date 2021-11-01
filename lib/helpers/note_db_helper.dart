@@ -36,7 +36,7 @@ class NoteDbHelper {
     return await db.insert("notes", note.toMap());
   }
 
-  getAllNotes() async {
+  Future<List<Map<String, dynamic>>>getAllNotes() async {
     sql.Database db = await _getDatabase();
     return await db.query('notes');
   }
