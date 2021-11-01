@@ -36,7 +36,7 @@ class OnBoardingPage extends StatelessWidget {
           SizedBox(
             height: 56.0,
             width: _width! * 0.4,
-            child: setElevatedButton(_onButtonPressed, "Let's Go!"),
+            child: setElevatedButton(_onButtonPressed, "Let's Go!", radius: 32),
           ),
         ],
       );

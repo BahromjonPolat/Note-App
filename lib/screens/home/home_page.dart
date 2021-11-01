@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:note_app/consts/colors.dart';
+import 'package:note_app/screens/newNote/new_note_page.dart';
 import 'package:note_app/widgets/buttons.dart';
 import 'package:note_app/widgets/circular_indicators.dart';
 import 'package:note_app/widgets/icon.dart';
@@ -28,6 +30,8 @@ class _HomePageState extends State<HomePage> {
 
   SliverAppBar _buildSliverAppBar() => SliverAppBar(
         backgroundColor: colorLightBrown,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+
         title: setSimpleText(
           "Notes",
           color: colorWhite,
@@ -58,6 +62,6 @@ class _HomePageState extends State<HomePage> {
       );
 
   void _onFloatingActionButtonPressed() {
-    Fluttertoast.showToast(msg: "Clicked");
+    Navigator.push(context, MaterialPageRoute(builder: (_)=>NewNotePage()));
   }
 }
