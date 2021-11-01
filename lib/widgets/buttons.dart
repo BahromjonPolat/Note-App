@@ -7,9 +7,10 @@ ElevatedButton setElevatedButton(VoidCallback onPressed, String label,
       onPressed: onPressed,
       child: Text(label),
       style: ElevatedButton.styleFrom(
-        primary: color,
-        shape: RoundedRectangleBorder(
-          borderRadius: setCircularBorderRadius(radius: 32.0)
-        )
-      ),
+          primary: color,
+          shape: RoundedRectangleBorder(
+              borderRadius: setCircularBorderRadius(radius: 32.0))),
     );
+
+IconButton setIconButton(VoidCallback onPressed, IconData iconData) =>
+    IconButton(onPressed: onPressed, icon: Icon(iconData));

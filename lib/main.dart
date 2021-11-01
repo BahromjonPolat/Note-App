@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Note App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: "SofiaPro",
         primarySwatch: Colors.deepOrange,
         primaryColor: colorLightBrown,
       ),
